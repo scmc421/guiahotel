@@ -79,7 +79,7 @@
       <br><br>
       <div class="row">
         <div class="col-sm-4 d-flex flex-column">
-          <a href="https://www.facebook.com">Facebook</a>
+          <a href="www.facebook.com" class="text" data-toggle="tooltip" data-placement="top" title="enlace de facebook">Facebook</a>
           <a href="https://www.twitter.com">Twitter</a>
           <a href="https://www.instagram.com">Instagram</a>
           <a href="https://www.youtube.com">Youtube</a>
@@ -111,6 +111,15 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  </script>
+  <script>
+    $(function (){
+      $("[data-toggle='tooltip']").tooltip();
+
+      $(".carousel").carousel({
+        interval: 2000
+      })
+    })
   </script>
   </body>   
 </html>
