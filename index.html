@@ -192,7 +192,51 @@
           <span class="sr-only">Next</span>
         </a>
   </div>
-    
+<!-- Para sacar el modal --> 
+  
+  <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+    <div class="card-body">
+        <h5 class="card-title">Descubre más...</h5>
+        <p class="card-text">Lo veo y no lo creo, que tipo tan divino aplicabo fugit doloremque vel, corrupti ipsa nostrum.</p>
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+    </div>
+    <div>
+        <button class="btn btn-primary btn-verDetalle" data-toggle="modal" data-target="#masEquipos" >Seleccioar equipos</button>
+    </div>
+</div>
+<!-- usa un botón para sacar el modal -->
+
+
+<!-- El Modal -->
+  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModallabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modla-title" id="exampleModallabel">Contacto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Tu email:</label>
+                        <input type="text" class="form-contrl" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea type="text" class="form-contrl" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sucess">Enviar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- fin del modal -->
+
     <footer>
       <br><br>
       <div class="row">
