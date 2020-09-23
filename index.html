@@ -197,8 +197,8 @@
   <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
     <div class="card-body">
         <h5 class="card-title">Descubre más...</h5>
-        <p class="card-text">Lo veo y no lo creo, que tipo tan divino aplicabo fugit doloremque vel, corrupti ipsa nostrum.</p>
-        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+        <p class="card-text">Lo veo y no lo creo, que tipo tan divino aplicando fugit doloremque vel, corrupti ipsa nostrum.</p>
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
     </div>
     <div>
         <button class="btn btn-primary btn-verDetalle" data-toggle="modal" data-target="#masEquipos" >Seleccioar equipos</button>
@@ -262,8 +262,44 @@
           <a href="https://www.youtube.com">Contacto</a>
         </div>
     </footer>
-<!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- Optional JavaScript jQuery-->
+<script>
+  $(function(){
+      $("[data-toggle='tooltip']").tooltip();
+      $("[data-toggle='tooltip']").popover();
+      $('tooltip').carousel({
+        interval:2000
+      });
+      $('#contacto').on('show.bs.modal', function (e){
+          console.log('el Modal Contacto se está Mostrando');
+
+          $('#contactoBtn').removeClass('btn-outline-success');
+          $('#contactoBtn').addClass('btn-primary');
+
+      });
+      $('#contacto').on('shown.bs.modal', function(e){
+          console.log('el Modal Contacto SE MOSTRÓ');
+      });
+      $('#contacto').on('hide.bs.modal', function(e){
+          console.log('El Modal Contactto Se Oculta');
+      });
+      $('#conctacto').on('hidden.bs.modal', function(e){
+          console.log('El Modal contacto se ocultó');
+      });
+  });
+</script>
+
+<!-- jQuery para poner eventos a un botón -->
+<script>
+
+</script>
+<!--así se ponen funciones-->
+  <!--
+  $(function(){
+    $("[]");
+  });
+-->
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
