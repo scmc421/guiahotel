@@ -1,11 +1,14 @@
+$yellow:#0ee848;
+
+
 .jumbotron{
-    background-color: lightgreen;
+    background-color: $yellow;
     color:black;
     margin-top: 50px;
 }
 .footer{
     padding: 10px 10px 0 10px;
-    background-color: lightgreen;
+    background-color: $yellow;
     margin-bottom: 0px;
     margin-top: 10px;
 }
@@ -20,4 +23,7 @@
 }
 .footer-address-icon{
     padding-right: 10px;
+}
+.tab-content{
+    padding-top: 10px;
 }

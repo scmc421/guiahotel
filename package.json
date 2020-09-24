@@ -1,0 +1,26 @@
+{
+  "name": "guiahotel",
+  "version": "1.0.0",
+  "description": "Hoteles en mi ciudad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"scss": "node-sass -o css/ css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scmc421/guiahotel.git"
+  },
+  "author": "Software Los Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scmc421/guiahotel/issues"
+  },
+  "homepage": "https://github.com/scmc421/guiahotel#readme",
+  "dependencies": {
+    "sass": "^1.26.11"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
