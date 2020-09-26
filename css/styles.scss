@@ -1,21 +1,28 @@
 $yellow:#0ee848;
-
-
+// Defino un mixin
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-top: $bottom;
+}
 .jumbotron{
     background-color: $yellow;
     color:black;
-    margin-top: 50px;
+    //margin-top: 50px; esto lo quito por que ya lo puse en el mixin
+    //incluyo el mixin
+    @include margenes(50px, 0px); //si indicamos 2 parámetros, siempre defino 2 parámetros
 }
 .footer{
     padding: 10px 10px 0 10px;
     background-color: $yellow;
     margin-bottom: 0px;
-    margin-top: 10px;
+    //margin-top: 10px;
+    @include margenes(10px, 0px);
 }
 .card-hotel{
     flex:1 200px;
     padding: 2px 0px 2px 0px;
-    margin-top: 10px;
+    //margin-top: 10px;
+    @include margenes(10px, 0px);
 }
 .btn-reserva{
     width: 100%;
